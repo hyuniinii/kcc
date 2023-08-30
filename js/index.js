@@ -11,7 +11,23 @@ $(function(){
 
     })
     
-
+    /* gnb */
+    $('.gnb > li > a').on('mouseenter', function(){
+        /* if(winWidth > 768){ */
+            $(this).next('.subMenu').stop().slideDown();
+      /*   } else{
+            $('.gnb > li > a').off('click');
+            $('.gnb > li > a').on('click', function(){
+                $('.submenu').stop().slideUp();
+                $(this).next('.submenu').stop().slideToggle();
+            });
+        } */
+    });
+    $('.gnb > li > a').on('mouseleave', function(){
+       /*  if(winWidth > 768){ */
+            $(this).next('.subMenu').stop().slideUp();
+        /* } */
+    });
 
 
 
